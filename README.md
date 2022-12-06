@@ -49,18 +49,18 @@ The main  goals of this project is to be able to predict whenever the transacion
 
 
 1. As we can, see the most popular type of transaction is cash_out and payment
-<img src="C:\Users\hecto\OneDrive\Documents\GitHub\Fraud_Detection\image\Capture d’écran_20221205_054424.png" style="max-width: 240px"/> 
+<img src="image/Capture d’écran_20221205_054424.png" style="max-width: 140px"/> 
 
 
 
 2. As we can see , we can compare the different type of transaction peoples were making(categorize by fraud or not)
-<img src="C:\Users\hecto\OneDrive\Documents\GitHub\Fraud_Detection\image\Capture d’écran_20221205_054535.png" style="max-width: 240px"/>
+<img src="image/Capture d’écran_20221205_054535.png" style="max-width: 40px"/>
 
 
 
 
 3. Between the fraudlent transaction only two type of transaction seems  to be favored, the cash_out option and Transfer
-<img src="C:\Users\hecto\OneDrive\Documents\GitHub\Fraud_Detection\image\Capture d’écran_20221205_054544.png" style="max-width: 240px"/>
+<img src="image/Capture d’écran_20221205_054544.png" style="max-width: 140px"/>
 
 There are four types of transaction in the dataset but only two were used to make suspicious payment. In the 8213 fraudlent transactions 4116 is cash_out and 4097 is transfer money
 
@@ -71,7 +71,10 @@ Because the dataset were very unbalanced , Only 0,13 % of the entire dataset whi
 
 1. I use three different methods to resample the data the best that I could to balance the dataset. After that , I used logistic regression
 on all three of them to see which of is better for resample the unbalnce data.
+
 2 .I also use metrics like  random forest classifier , XGBClassifier , SVC
+
+
 
 ## Results:
 
@@ -165,4 +168,4 @@ Also , with the help with the confusion matrix , the model predict successfully 
 #### False negative: 56
 
 
-<img src="C:\Users\hecto\OneDrive\Documents\GitHub\Fraud_Detection\image\Capture d’écran_20221206_073354.png" style="max-width: 240px"/>
+<img src="image/Capture d’écran_20221206_073354.png" style="max-width: 140px"/>
