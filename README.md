@@ -49,18 +49,18 @@ The main  goals of this project is to be able to predict whenever the transacion
 
 
 1. As we can, see the most popular type of transaction is cash_out and payment
-<img src="image/Capture d’écran_20221205_054424.png" style="max-width: 480px"/> 
+<img src="image/Capture d’écran_20221205_054424.png" style="width: 480px"/> 
 
 
 
 2. As we can see , we can compare the different type of transaction peoples were making(categorize by fraud or not)
-<img src="image/Capture d’écran_20221205_054535.png" style="max-width: 720px"/>
+<img src="image/Capture d’écran_20221205_054535.png" style="width: 720px"/>
 
 
 
 
 3. Between the fraudlent transaction only two type of transaction seems  to be favored, the cash_out option and Transfer
-<img src="image/Capture d’écran_20221205_054544.png" style="max-width: 400px"/>
+<img src="image/Capture d’écran_20221205_054544.png" style="width: 400px"/>
 
 There are four types of transaction in the dataset but only two were used to make suspicious payment. In the 8213 fraudlent transactions 4116 is cash_out and 4097 is transfer money
 
@@ -171,4 +171,4 @@ Also , with the help with the confusion matrix , the model predict successfully 
 #### False negative: 56
 
 
-<img src="image/Capture d’écran_20221206_073354.png" style="max-width: 400px"/>
+<img src="image/Capture d’écran_20221206_073354.png" style="width: 400px"/>
