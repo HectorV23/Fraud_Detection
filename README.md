@@ -1,4 +1,3 @@
-
 # Fraud Dectection
 
 ### - Capstone Project - Final project
@@ -50,18 +49,18 @@ The main  goals of this project is to be able to predict whenever the transacion
 
 
 1. As we can, see the most popular type of transaction is cash_out and payment
-<img src="C:\Users\hecto\fraud_dectection\image\Capture d’écran_20221205_054424.png" style="max-width: 240px"/>
+<img src="Fraud_Detection/image/Capture d’écran_20221205_054424.png" style="max-width: 240px"/> 
 
 
 
 2. As we can see , we can compare the different type of transaction peoples were making(categorize by fraud or not)
-<img src="C:\Users\hecto\fraud_dectection\image\Capture d’écran_20221205_054535.png" style="max-width: 240px"/>
+<img src="Fraud_Detection/image/Capture d’écran_20221205_054535.png" style="max-width: 240px"/>
 
 
 
 
 3. Between the fraudlent transaction only two type of transaction seems  to be favored, the cash_out option and Transfer
-<img src="C:\Users\hecto\fraud_dectection\image\Capture d’écran_20221205_054544.png" style="max-width: 240px"/>
+<img src="Fraud_Detection/image/Capture d’écran_20221205_054544.png" style="max-width: 240px"/>
 
 There are four types of transaction in the dataset but only two were used to make suspicious payment. In the 8213 fraudlent transactions 4116 is cash_out and 4097 is transfer money
 
@@ -78,40 +77,40 @@ on all three of them to see which of is better for resample the unbalnce data.
 
 #### Random Forest Classifier
 
-                   precision  recall  f1-score support
+                   precision  recall  f1-score    support
 
-         0.0       1.00      1.00      1.00    402823
-         1.0       0.96      0.69      0.80       465
+             0.0       1.00      1.00      1.00    402823
+             1.0       0.96      0.69      0.80       465
 
-    accuracy                           1.00    403288
-   macro avg       0.98      0.84      0.90    403288
-weighted avg       1.00      1.00      1.00    403288
+        accuracy                           1.00    403288
+       macro avg       0.98      0.84      0.90    403288
+    weighted avg       1.00      1.00      1.00    403288
     
 
 
 #### Random Forest Classifier(SMOTE)
 
-                   precision  recall  f1-score support
+                   precision  recall    f1-score   support
 
-         0.0       1.00      1.00      1.00   1079283
-         1.0       0.97      0.73      0.83       913
+             0.0       1.00      1.00      1.00   1079283
+             1.0       0.97      0.73      0.83       913
 
-    accuracy                           1.00   1080196
-   macro avg       0.99      0.86      0.92   1080196
-weighted avg       1.00      1.00      1.00   1080196
+        accuracy                           1.00   1080196
+       macro avg       0.99      0.86      0.92   1080196
+    weighted avg       1.00      1.00      1.00   1080196
 
 
 
 #### Random Under Sampling  Logistic XGBClassifier() Regression SVC
 
-                   precision  recall  f1-score support
+                   precision  recall   f1-score    support
 
-         0.0       0.91      0.92      0.92       667
-         1.0       0.91      0.91      0.91       625
+             0.0       0.91      0.92      0.92       667
+             1.0       0.91      0.91      0.91       625
 
-    accuracy                           0.91      1292
-   macro avg       0.91      0.91      0.91      1292
-weighted avg       0.91      0.91      0.91      1292
+        accuracy                           0.91      1292
+       macro avg       0.91      0.91      0.91      1292
+    weighted avg       0.91      0.91      0.91      1292
 
 
 
@@ -127,14 +126,14 @@ F1 score: 0.8892380204241949
 
 #### Generate_synthetic_samples(SMOTE) Logistic Regression XGBClassifier()
 
-                   precision  recall  f1-score support
+                   precision  recall  f1-score  support
 
-         0.0       1.00      0.93      0.96    251664
-         1.0       0.01      0.96      0.01       140
+             0.0       1.00      0.93      0.96    251664
+             1.0       0.01      0.96      0.01       140
 
-    accuracy                           0.93    251804
-   macro avg       0.50      0.94      0.49    251804
-weighted avg       1.00      0.93      0.96    251804
+        accuracy                           0.93    251804
+       macro avg       0.50      0.94      0.49    251804
+    weighted avg       1.00      0.93      0.96    251804
 
    
        
@@ -143,6 +142,7 @@ XGBClassifier():
 Accuracy score is: 0.966557322361837
 ROCAUC score: 0.9725610337592981
 F1 score: 0.031512363427257044
+
 
 
 # Conclusion :
@@ -158,5 +158,4 @@ Also , with the help with the confusion matrix , the model predict successfully 
 #### False negative: 56
 
 
-<img src="C:\Users\hecto\fraud_dectection\image\Capture d’écran_20221206_073354.png" style="max-width: 240px"/>
-
+<img src="Fraud_Detection/image/Capture d’écran_20221206_073354.png" style="max-width: 240px"/>
