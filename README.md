@@ -49,18 +49,18 @@ The main  goals of this project is to be able to predict whenever the transacion
 
 
 1. As we can, see the most popular type of transaction is cash_out and payment
-<img src="image/Capture d’écran_20221205_054424.png" style="max-width: 140px"/> 
+<img src="image/Capture d’écran_20221205_054424.png" style="max-width: 20px"/> 
 
 
 
 2. As we can see , we can compare the different type of transaction peoples were making(categorize by fraud or not)
-<img src="image/Capture d’écran_20221205_054535.png" style="max-width: 40px"/>
+<img src="image/Capture d’écran_20221205_054535.png" style="max-width: 20px"/>
 
 
 
 
 3. Between the fraudlent transaction only two type of transaction seems  to be favored, the cash_out option and Transfer
-<img src="image/Capture d’écran_20221205_054544.png" style="max-width: 140px"/>
+<img src="image/Capture d’écran_20221205_054544.png" style="max-width: 20px"/>
 
 There are four types of transaction in the dataset but only two were used to make suspicious payment. In the 8213 fraudlent transactions 4116 is cash_out and 4097 is transfer money
 
@@ -117,7 +117,8 @@ on all three of them to see which of is better for resample the unbalnce data.
 
 
 
-Logistic XGBClassifier() 
+Logistic XGBClassifier() :
+
 Accuracy score is: 0.9775541795665634
 
 ROCAUC score: 0.9777571214392804
@@ -125,7 +126,8 @@ ROCAUC score: 0.9777571214392804
 F1 score: 0.976965845909452
 
 
-Regression SVC
+Regression SVC:
+
 ROCAUC score: 0.8913307346326836
 
 Accuracy score: 0.8908668730650154
@@ -146,7 +148,8 @@ F1 score: 0.8892380204241949
    
        
        
-XGBClassifier():       
+XGBClassifier(): 
+
 Accuracy score is: 0.966557322361837
 
 ROCAUC score: 0.9725610337592981
@@ -168,4 +171,4 @@ Also , with the help with the confusion matrix , the model predict successfully 
 #### False negative: 56
 
 
-<img src="image/Capture d’écran_20221206_073354.png" style="max-width: 140px"/>
+<img src="image/Capture d’écran_20221206_073354.png" style="max-width: 20px"/>
