@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Fraud Dectection
 
 ### - Capstone Project - Final project
@@ -145,7 +145,6 @@ ROCAUC score: 0.9725610337592981
 F1 score: 0.031512363427257044
 
 
-
 # Conclusion :
 
 If I have to choose the best model to predict the outcomes of a transaction , it will probably be under the model of logistic regression 
@@ -161,28 +160,3 @@ Also , with the help with the confusion matrix , the model predict successfully 
 
 <img src="C:\Users\hecto\fraud_dectection\image\Capture d’écran_20221206_073354.png" style="max-width: 240px"/>
 
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-# fraud_dectection
-
-### Timeline
-
-1. Getting the data November 24th
-2. Cleaning the data 
-3. data visualisation
-4. making the prediction model
-5. test model
-7. interpretation / conclusion
-8. Final presentation december 3third
->>>>>>> b7bda0a695ff3cfae30193e24d1ed80caa555c29
