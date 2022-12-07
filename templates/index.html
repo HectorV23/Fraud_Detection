@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Prediction of fraudulent transaction</h1>
+     <h4>Amount ,OldbalanceOrg , NewbalanceOrig , OldbalanceDest and NewbalanceDest can be in the range 0-1000000 dollars  </h4>
+     <h4>Type of payment can be in the range 0-1 </h4>
+     <h4>Type2_CM can be in the range 0-1 </h4>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="gas_type" placeholder="Amount" required="required" />
+        <input type="text" name="water_content" placeholder="OldbalanceOrg" required="required" />
+        <input type="text" name="viscosity" placeholder="NewbalanceOrig" required="required" />
+        <input type="text" name="time" placeholder="OldbalanceDest" required="required" />
+        <input type="text" name="time" placeholder="NewbalanceDest" required="required" />
+        <input type="text" name="gas_type" placeholder="Type_CASH_OUT" required="required" />
+        <input type="text" name="water_content" placeholder="Type_DEBIT" required="required" />
+        <input type="text" name="viscosity" placeholder="Type_PAYMENT" required="required" />
+        <input type="text" name="time" placeholder="Type_TRANSFER" required="required" />
+        <input type="text" name="time" placeholder="Type2_CM" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict Fraudulent transaction</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+     {{ prediction_text2 }}
+
+ </div>
+
+
+</body>
+</html>
+
